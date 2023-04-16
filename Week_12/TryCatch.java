@@ -1,45 +1,29 @@
-package Week_12;
+package TryCatch;
 
-public class TryCatch {
-
-    public static void main(String[] args)
-    {
-        int a = 10, b = 1;
+public class TryCatch
+{
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 0;
 
         try
         {
-            int z = a / b;
-            System.out.println("Inside try block " + z);
+            System.out.println("Hello");
+            int z = x / y;
+            System.out.println("World");
         }
 
-        catch (NumberFormatException e1)
-        {
-            System.out.println("Number format exception");
-        }
-        catch (ArithmeticException e2)
+        catch (ArithmeticException e )
         {
             System.out.println("Arithmetic Exception");
         }
-        catch (NullPointerException e3)
-        {
-            System.out.println("Null pointer exception");
-        }
-        catch (ArrayIndexOutOfBoundsException e4)
-        {
-            System.out.println("Array index out of bounds exception");
-        }
 
-        catch(Exception e)
-        {
-            System.out.println("Exception " + e);
-        }
         finally
         {
-            System.out.println("Finally will be executed");
+            System.out.println("This is inside finally block");
         }
 
-        System.out.println("Rest of the code...");
-
+        System.out.println("End of the code");
     }
-
 }
+
