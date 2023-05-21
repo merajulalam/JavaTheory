@@ -9,7 +9,7 @@ public class Bird extends Animal
 
     public void move()
     {
-        System.out.println("Bird move by flying");
+        System.out.println("Bird is flying");
     }
 
     public void fly()
